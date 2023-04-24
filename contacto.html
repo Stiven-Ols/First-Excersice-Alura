@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-3</title>
+    <link rel="stylesheet" href="CSS/styles-contacto.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+            <h1>
+                <img class="logo" src="img/logo.png" alt="logo">
+            </h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="">
+            <label for="input-nombre">Nombre Completo</label>
+            <input type="text" id="input-nombre" class="input-padron" required>
+
+            <label for="input-email">Correo Electronico</label>
+            <input type="email" id="input-email" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="input-number">Telefono</label>
+            <input type="tel" id="input-number" class="input-padron" required placeholder="(xx) xxxx xxxx">
+
+            <label for="text-area">Mensaje</label>
+            <textarea class="input-padron" name="" id="text-area" cols="30" rows="10" required>
+            </textarea>
+
+
+            <!-- RADIO BUTTON -->
+            <div>
+                <p>¿Como quieres ser contactado?</p>
+
+                <label for="input-radio">
+                    <input type="radio" name="contacto" value="email" id="input-radio">
+                    Email
+                </label>
+                
+
+                <label for="input-radio">
+                    <input type="radio" name="contacto" value="Telefono" id="input-radio">
+                    Telefono
+                </label>
+                
+
+                <label for="input-radio">
+                    <input type="radio" name="contacto" value="WhatsApp" id="input-radio" checked>
+                    WhatsApp
+                </label>
+                
+            </div>
+
+            <!-- SELECT -->
+            <div class="select">
+                <p>¿En cual horario prefiere ser atendido?</p>
+                <select name="" id="">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </div>
+
+            <label class="checkbox" for="">
+                <input type="checkbox" checked>
+                Le gustaria recibir novedade de la Barberia Alura
+            </label>
+
+            <input class="btn-enviar" type="submit" value="Enviar" />
+
+        </form>
+
+        <!-- TABLE -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>horario</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08H ~ 20H</td>
+                </tr> 
+                <tr>
+                    <td>Miercoles</td>
+                    <td>10H ~ 19H</td>
+                </tr> 
+                <tr>
+                    <td>Viernes</td>
+                    <td>07H ~ 20H</td>
+                </tr> 
+            </tbody>
+            
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="img/logo-blanco.png" alt="Logo">
+        <p class="copyright">&copy Copyright Stiven-Ols - 2023</p>
+    </footer>
+</body>
+</html>

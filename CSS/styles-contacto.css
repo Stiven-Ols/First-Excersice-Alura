@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+
+/* STYLES HEADER */
+
+.header h1 {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+    color: black;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-bar a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+.nav-bar a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+.nav-bar a:hover:after {
+    width: 100%;
+    right: 0;
+}
+/* ------------------- */
+
+
+/* STYLES SERVICES */
+/* .servicios {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #cccc;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.servicios li:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.servicios li:active {
+    border-color: #000000;
+}
+
+.servicios h2 {
+    font: 30px;
+    font-weight: 400;
+}
+
+.servicios-des{
+    font-size: 18px;
+}
+
+.servicios-price {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+} */
+/* ------------------- */
+
+
+/* STYLES FORM */
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form p {
+    display: block;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.btn-enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #969494;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.btn-enviar:hover {
+    transform: scale(1.03);
+    background-color: #292929;
+    color: #ffffff;
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background-color: #292929;
+    color: white;
+    font-weight: 500;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+/* ------------------- */
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    background-image: url(../img/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+}
+/* ------------- */
